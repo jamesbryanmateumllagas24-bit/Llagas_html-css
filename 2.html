@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My webstite</h1>
+        </header>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .left {
+                float: left;
+                width: 50%;
+                background: lightgray;
+                padding: 20px; 
+            }
+            .right {
+                float: right;
+                width: 50%;
+                background: lightyellow;
+                padding: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="left">left content</div>
+        <div class="right">right content</div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://via.placeholder.com/600x300" alt="sample">
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                background: #333;
+                padding: 0;
+                margin: 0;
+            }
+            li {
+                display:inline;
+                margin-right: 20px;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+        </ul>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .btn {
+                background: green;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+            .btn:hover {
+                background: darkgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="btn">Click me</button>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form {
+                width: 300px;
+                margin: 20px auto;
+            }
+            input, textarea {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+            <textarea placeholder="message"></textarea>
+            <button>submit</button>
+        </form>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .card {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 20px;
+                width: 250px;
+                margin: 10px auto;
+                box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+        <h3>card title</h3>
+        <p>some card content</p>
+    </div>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .modal {
+                display: none;
+                position: fixed;
+                top: 50;
+                left: 50;
+                transform: translate(-50%, -50%);
+                background: white;
+                padding: 20px;
+                border: 1px solid black;
+            }
+            .modal.show {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <button
+        onclick="document.getElementById('mymodal').classlist.add(show)">
+        open modal</button>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .row {
+                display: flex;
+            }
+            .col {
+                flex:1;
+                margin: 5px;
+                padding: 20px;
+                background: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col">column 1</div>
+            <div class="col">column 2</div>
+            <div class="col">column 3</div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .dropdown {
+                position:relative;
+                display: inline-block;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background: white;
+                border: 1px solid #ccc;
+                min-width: 120px;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button>Menu</button>
+            <div class="dropdown-content">
+                <p>option 1</p>
+                <p>option 2</p>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .center {
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <h1>centered text</h1>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                position: sticky;
+                top:0;
+                background: lightblue;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>sticky header</header>
+        <p>scroll down...</p>
+        <div style="height:1500px;"></div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            footer {
+                position: fixed;
+                bottom:0;
+                width:100%;
+                background: gray;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>page content here...</p>
+        <footer>fixed footer</footer>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .col {
+                float:left;
+                width:33.3%;
+                padding:20px;
+                box-sizing:border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="col">column 1</div>
+        <div class="col">column2</div>
+         <div class="col">column3</div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .gallery {
+                display:flex;
+                flex-wrap: wrap;
+            }
+            .gallery img {
+                width: 30%;
+                margin: 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gallery">
+            <img src="https//via.placeholder.com/150">
+             <img src="https//via.placeholder.com/150">
+              <img src="https//via.placeholder.com/150">
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .card {
+                width: 250px;
+                border: 1px solid #ccc;
+                border-radius:5px;
+                padding:15px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <img src="https://via.placeholder.com/100">
+            <h3>James Llagas</h3>
+            <p>web developer</p>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .banner {
+                background: lightblue;
+                paddin: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+        <h1>welcome to my website</h1>
+        <p>this is a hero banner</p>
+    </div>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav {
+                display: flex;
+                justify-content: space-between;
+                background: #333;
+                padding:10px;
+            }
+            nav a {
+                color:white;
+                margin:0 10px;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>logo</div>
+            <div>
+            <a href="#">home</a>
+            <a href="#">about</a>
+         </div>
+        </nav>
+    </body>
+    </html>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                .pricing {
+                    display:flex;
+                    justify-content: center;
+                }
+                .plan {
+                    border:1px solid #ccc;
+                    padding: 20px;
+                    margin: 10px;
+                    width: 200px;
+                    text-align:center;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="pricing"></div>
+            <div class="plan">basic</div>
+             <div class="plan">standard</div>
+              <div class="plan">premium</div>
+        </body>
+    </html>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                .sidebar {
+                    width:200px;
+                    float: left;
+                    background: lightgray;
+                    height:100vh;
+                    padding: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="siderbar">sidebar</div>
+            <div class="content">main content</div>
+        </body>
+    </html>
